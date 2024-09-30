@@ -2,30 +2,17 @@ using System;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.Write("Enter your grade percentage: ");
-        string answer = Console.ReadLine();
-        int percent = int.Parse(answer);
+        // Prompt for first name
+        Console.Write("What is your first name? ");
+        string firstName = Console.ReadLine();
 
-        string letter = "";
+        // Prompt for last name
+        Console.Write("What is your last name? ");
+        string lastName = Console.ReadLine();
 
-        if (percent >= 90)
-            letter = "A";
-        else if (percent >= 80)
-            letter = "B";
-        else if (percent >= 70)
-            letter = "C";
-        else if (percent >= 60)
-            letter = "D";
-        else
-            letter = "F";
-
-        Console.WriteLine($"Your letter grade is: {letter}");
-
-        if (percent >= 70)
-            Console.WriteLine("Congratulations! You passed the course.");
-        else
-            Console.WriteLine("You didn't pass this time, but keep working hard for next time!");
+        // Display the formatted name
+        Console.WriteLine($"\nYour name is {lastName}, {firstName} {lastName}.");
     }
 }
