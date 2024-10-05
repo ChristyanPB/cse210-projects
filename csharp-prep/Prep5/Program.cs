@@ -13,6 +13,7 @@ class Program
         DisplayResult(userName, squaredNumber);
     }
 
+
     static void DisplayWelcome()
     {
         Console.WriteLine("Welcome to the program!");
